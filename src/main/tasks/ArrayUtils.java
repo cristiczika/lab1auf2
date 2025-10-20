@@ -36,4 +36,16 @@ public class ArrayUtils {
 
         return sum - min;
     }
+
+    public static int getMinSum(int[] numbers) {
+        int sum = 0;
+        int max = getMax(numbers);
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+
+        return sum - max;
+    }
+
 }
