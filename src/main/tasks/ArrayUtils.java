@@ -25,4 +25,15 @@ public class ArrayUtils {
 
         return min;
     }
+
+    public static int getMaxSum(int[] numbers) {
+        int sum = 0;
+        int min = getMin(numbers);
+
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+
+        return sum - min;
+    }
 }
